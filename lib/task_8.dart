@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Task_8());
+  runApp(prob_8());
 }
 
-class Task_8 extends StatelessWidget {
-  const Task_8({super.key});
+class prob_8 extends StatelessWidget {
+  const prob_8({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Navigation Drawer',
+      title: 'About',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomeScreen(),
     );
@@ -19,23 +19,29 @@ class Task_8 extends StatelessWidget {
 }
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key}); 
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 138, 96, 139),
-        title: Center(child: Text('Task_8'))),
+        backgroundColor: const Color.fromARGB(255, 228, 10, 10),
+        title: Center(child: Text('Tracker Problem-8')),
+      ),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              decoration: BoxDecoration(color: const Color.fromARGB(255, 192, 142, 175)),
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(6, 11, 229, 55),
+              ),
               child: Text(
                 'Navigation Drawer',
-                style: TextStyle(color: const Color.fromARGB(255, 144, 74, 131), fontSize: 24),
+                style: TextStyle(
+                  color: const Color.fromARGB(111, 118, 7, 47),
+                  fontSize: 24,
+                ),
               ),
             ),
             ListTile(
@@ -71,7 +77,7 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(child: Text('Favourites')),
+      body: Center(child: Text('Home Page')),
     );
   }
 }

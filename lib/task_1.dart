@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'theme_color.dart';
 
 class Task_1 extends StatelessWidget {
   const Task_1({super.key});

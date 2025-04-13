@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Task_2 extends StatefulWidget {
-  const Task_2({super.key});
+class prob_2 extends StatefulWidget {
+  const prob_2({super.key});
 
   @override
-  State<Task_2> createState() => _Task_2state();
+  State<prob_2> createState() => _prob_2state();
 }
 
-class _Task_2state extends State<Task_2> {
+class _prob_2state extends State<prob_2> {
   String displayText = 'Press the button below';
 
   void _updateText() {

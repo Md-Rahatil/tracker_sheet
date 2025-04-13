@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/task_5.dart';
-
+import 'package:flutter_practice/task_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,26 +14,25 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Roboto'),
 
-      // home: const Task_1(),
-      // home: const Task_2(),
-      // home: const Task_3(),
-      // home: const Task_4(),
-      home: const Task_5(),
-      // home: const Task_6(),
-      // home: const Task_7(),
-      // home: const Task_8(),
-      // home: const Task_9(),
-      // home: const Task_10(
-      // home: const Task_11(),
-      // home: const Task_12(),
-      // home: const Task_13(),
-      // home: const Task_14(),
-      //  home: const Task_15(),
-      // home: const Task_16(),
-      // home: const Task_17(),
-      //  home: const Task_18(),
-      // home: const Task_19(),
-      //  home: const Task_8(),
+      // home: const prob_1(),
+      // home: const prob_2(),
+      // home: const prob_3(),
+      // home: const prob_4(),
+      // home: const prob_5(),
+      // home: const prob_6(),
+      // home: const prob_7(),
+      // home: const prob_8(),
+      // home: const prob_9(),
+      // home: const prob_10(
+      // home: const prob_11(),
+      // home: const prob_12(),
+      // home: const prob_13(),
+      // home: const prob_14(),
+      //  home: const prob_15(),
+      // home: const prob_16(),
+      // home: const prob_17(),
+      //  home: const prob_18(),
+      // home: const prob_19(),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/task_6.dart';
+import 'package:flutter_practice/task_7.dart';
+
 
 
 void main() {
@@ -20,8 +21,8 @@ class MyApp extends StatelessWidget {
       // home: const prob_3(),
       // home: const prob_4(),
       // home: const prob_5(),
-      home: const prob_6(),
-      // home: const prob_7(),
+      // home: const prob_6(),
+      home: const prob_7(),
       // home: const prob_8(),
       // home: const prob_9(),
       // home: const prob_10(

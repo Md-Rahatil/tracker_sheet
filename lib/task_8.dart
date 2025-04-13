@@ -37,10 +37,10 @@ class HomeScreen extends StatelessWidget {
                 color: const Color.fromARGB(6, 11, 229, 55),
               ),
               child: Text(
-                'Navigation Drawer',
+                'About',
                 style: TextStyle(
                   color: const Color.fromARGB(111, 118, 7, 47),
-                  fontSize: 24,
+                  fontSize: 34,
                 ),
               ),
             ),
@@ -64,6 +64,7 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
+
             ListTile(
               title: Text('Settings'),
               onTap: () {

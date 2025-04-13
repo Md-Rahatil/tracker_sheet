@@ -20,7 +20,7 @@ class _prob_6State extends State<prob_6> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Welcome! Logged in as: ${_usernameController.text}'),
-          backgroundColor: const Color.fromARGB(255, 11, 109, 22),
+          backgroundColor: const Color.fromARGB(255, 232, 237, 233),
         ),
       );
     }
@@ -29,7 +29,7 @@ class _prob_6State extends State<prob_6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 247, 215, 236),
+      backgroundColor: const Color.fromARGB(255, 196, 197, 196),
       appBar: AppBar(
         title: const Center(
           child: Text(
@@ -37,11 +37,11 @@ class _prob_6State extends State<prob_6> {
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: Color.fromARGB(255, 255, 255, 255),
             ),
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 156, 38, 110),
+        backgroundColor: const Color.fromARGB(255, 2, 4, 2),
         elevation: 5,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
@@ -62,7 +62,7 @@ class _prob_6State extends State<prob_6> {
                     labelText: 'Username',
                     prefixIcon: const Icon(
                       Icons.person,
-                      color: Color.fromARGB(255, 79, 35, 201),
+                      color: Color.fromARGB(255, 2, 2, 2),
                     ),
                     filled: true,
                     fillColor: Colors.white,
@@ -90,7 +90,7 @@ class _prob_6State extends State<prob_6> {
                     labelText: 'Password',
                     prefixIcon: const Icon(
                       Icons.lock,
-                      color: Color.fromARGB(255, 67, 19, 200),
+                      color: Color.fromARGB(255, 0, 0, 0),
                     ),
                     filled: true,
                     fillColor: Colors.white,
@@ -109,11 +109,11 @@ class _prob_6State extends State<prob_6> {
                   onFieldSubmitted: (_) => _submitForm(),
                 ),
 
-                const SizedBox(height: 24),
+                const SizedBox(height: 54),
                 ElevatedButton(
                   onPressed: _submitForm,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 180, 50, 130),
+                    backgroundColor: const Color.fromARGB(255, 0, 0, 0),
                     padding: const EdgeInsets.symmetric(
                       horizontal: 56,
                       vertical: 13,

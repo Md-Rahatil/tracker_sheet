@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Task_6 extends StatefulWidget {
-  const Task_6({super.key});
+class prob_6 extends StatefulWidget {
+  const prob_6({super.key});
 
   @override
-  _Task_6State createState() => _Task_6State();
+  _prob_6State createState() => _prob_6State();
 }
 
-class _Task_6State extends State<Task_6> {
-  
+class _prob_6State extends State<prob_6> {
   final _formKey = GlobalKey<FormState>();
 
   final TextEditingController _usernameController = TextEditingController();
@@ -32,7 +31,16 @@ class _Task_6State extends State<Task_6> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 247, 215, 236),
       appBar: AppBar(
-        title: const Center(child: Text('Login Page', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white))),
+        title: const Center(
+          child: Text(
+            'Login Page',
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+        ),
         backgroundColor: const Color.fromARGB(255, 156, 38, 110),
         elevation: 5,
         shape: const RoundedRectangleBorder(
@@ -52,7 +60,10 @@ class _Task_6State extends State<Task_6> {
                   focusNode: _usernameFocusNode,
                   decoration: InputDecoration(
                     labelText: 'Username',
-                    prefixIcon: const Icon(Icons.person, color: Color.fromARGB(255, 79, 35, 201)),
+                    prefixIcon: const Icon(
+                      Icons.person,
+                      color: Color.fromARGB(255, 79, 35, 201),
+                    ),
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
@@ -77,14 +88,17 @@ class _Task_6State extends State<Task_6> {
                   focusNode: _passwordFocusNode,
                   decoration: InputDecoration(
                     labelText: 'Password',
-                    prefixIcon: const Icon(Icons.lock, color: Color.fromARGB(255, 67, 19, 200)),
+                    prefixIcon: const Icon(
+                      Icons.lock,
+                      color: Color.fromARGB(255, 67, 19, 200),
+                    ),
                     filled: true,
                     fillColor: Colors.white,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),
-                  obscureText: true, 
+                  obscureText: true,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Password is required';
@@ -101,8 +115,8 @@ class _Task_6State extends State<Task_6> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 180, 50, 130),
                     padding: const EdgeInsets.symmetric(
-                      horizontal: 56, 
-                      vertical: 13
+                      horizontal: 56,
+                      vertical: 13,
                     ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.5),
@@ -111,10 +125,7 @@ class _Task_6State extends State<Task_6> {
                   ),
                   child: const Text(
                     'Sign In',
-                    style: TextStyle(
-                      fontSize: 19,
-                      color: Colors.white,
-                    ),
+                    style: TextStyle(fontSize: 19, color: Colors.white),
                   ),
                 ),
               ],

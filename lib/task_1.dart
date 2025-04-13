@@ -9,7 +9,7 @@ class Task_1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text("Tracker Problem-1")),
-        backgroundColor: AppColors.lightText,
+        backgroundColor: const Color.fromARGB(255, 124, 174, 15),
       ),
       body: Center(
         child: Text(
@@ -17,7 +17,7 @@ class Task_1 extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Roboto',
             fontSize: 30,
-            color: AppColors.darkText,
+            color: const Color.fromARGB(255, 66, 6, 6),
             fontWeight: FontWeight.bold,
           ),
         ),

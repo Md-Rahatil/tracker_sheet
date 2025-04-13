@@ -62,8 +62,8 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('2nd Page')),
-        backgroundColor: const Color.fromARGB(255, 132, 106, 112),
+        title: const Center(child: Text('Tracker Problem-5 last Page')),
+        backgroundColor: const Color.fromARGB(255, 29, 213, 12),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -74,24 +74,25 @@ class SecondScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: const Color.fromARGB(248, 247, 249, 233),
+        color: const Color.fromARGB(252, 116, 200, 130),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'HERE IS THE 2ND PAGE',
+                'Last Page',
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
                   color: Color.fromARGB(255, 0, 0, 0),
                 ),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 82, 57, 57),
+                  backgroundColor: const Color.fromARGB(255, 11, 11, 11),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
+                    horizontal: 30,
                     vertical: 10,
                   ),
                 ),
@@ -99,8 +100,11 @@ class SecondScreen extends StatelessWidget {
                   Navigator.pop(context);
                 },
                 child: const Text(
-                  'BACK TO HOME PAGE',
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+                  'BACK',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 255, 255, 255),
+                  ),
                 ),
               ),
             ],

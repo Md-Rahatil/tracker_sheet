@@ -8,8 +8,8 @@ class Task_1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text("Task_1")),
-        backgroundColor: AppColors. lightText , 
+        title: const Center(child: Text("Tracker Problem-1")),
+        backgroundColor: AppColors.lightText,
       ),
       body: Center(
         child: Text(
@@ -17,7 +17,7 @@ class Task_1 extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Roboto',
             fontSize: 30,
-            color: AppColors.darkText, 
+            color: AppColors.darkText,
             fontWeight: FontWeight.bold,
           ),
         ),

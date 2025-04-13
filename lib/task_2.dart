@@ -20,8 +20,8 @@ class _Task_2state extends State<Task_2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Tracker Problem-2'),
-        backgroundColor: const Color.fromARGB(255, 209, 97, 207), 
+        title: Center(child: Text('Tracker Problem-2')),
+        backgroundColor: const Color.fromARGB(255, 51, 221, 65),
       ),
       body: Center(
         child: Column(
@@ -29,16 +29,16 @@ class _Task_2state extends State<Task_2> {
           children: <Widget>[
             Text(
               displayText,
-              style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: _updateText,
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 12,
+                ),
                 textStyle: const TextStyle(fontSize: 18),
               ),
               child: const Text('Press Me'),

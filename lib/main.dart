@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/task_1.dart';
+
+import 'package:flutter_practice/task_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Roboto'),
 
-      home: const Task_1(),
-
-      //home: const Task_2(),
+      // home: const Task_1(),
+      home: const Task_2(),
       // home: const Task_3(),
       // home: const Task_4(),
       // home: const Task_5(),

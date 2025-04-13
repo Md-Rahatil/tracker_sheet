@@ -20,7 +20,7 @@ class _Task_2state extends State<Task_2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Task_2'),),
+        title: Center(child: Text('Tracker Problem-2'),
         backgroundColor: const Color.fromARGB(255, 209, 97, 207), 
       ),
       body: Center(

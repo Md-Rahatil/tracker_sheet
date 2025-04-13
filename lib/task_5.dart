@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Task_5 extends StatelessWidget {
   const Task_5({super.key});
 
@@ -8,41 +7,43 @@ class Task_5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('Task_5')),
-        backgroundColor: const Color.fromARGB(255, 209, 131, 192),
+        title: const Center(child: Text('Tracker Problem-5')),
+        backgroundColor: const Color.fromARGB(255, 13, 248, 5),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'WELCOME TO MY HOME PAGE',
+              'This is the First page of flutter',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
             ),
-            
-        
 
-            const SizedBox(height: 20),
-            
+            const SizedBox(height: 300),
+
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 30, 98, 83),
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 30,
+                  vertical: 10,
+                ),
               ),
               onPressed: () {
-              
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const SecondScreen()),
                 );
               },
               child: const Text(
-                'CLICK TO GO NEXT PAGE',
+                "Next",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w900,
                   color: Colors.white,
                 ),
               ),
@@ -73,7 +74,7 @@ class SecondScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: const Color.fromARGB(248, 247, 249, 233), 
+        color: const Color.fromARGB(248, 247, 249, 233),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -89,18 +90,17 @@ class SecondScreen extends StatelessWidget {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 82, 57, 57),
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 10,
+                  ),
                 ),
                 onPressed: () {
-                  
                   Navigator.pop(context);
                 },
                 child: const Text(
                   'BACK TO HOME PAGE',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.white,
-                  ),
+                  style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
               ),
             ],

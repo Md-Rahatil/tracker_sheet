@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Task_10 extends StatefulWidget {
-  const Task_10 ({super.key});
+class prob_10 extends StatefulWidget {
+  const prob_10({super.key});
 
   @override
-  State<Task_10> createState() => _Task_10State();
+  State<prob_10> createState() => _prob_10State();
 }
 
-class _Task_10State extends State<Task_10> {
-  
-  int _selectedIndex = 0; 
-  
+class _prob_10State extends State<prob_10> {
+  int _selectedIndex = 0;
+
   final List<Widget> _pages = [HomePage(), SearchPage(), ProfilePage()];
 
   void _onItemTapped(int index) {
@@ -83,25 +82,17 @@ class SearchPage extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(
-            'assets/IMG02.jpg',
-          ),
+          Image.asset('assets/IMG02.jpg'),
           SizedBox(height: 20),
           Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: 40,
-            ),
-            child: Text(
-              'Mac Cosmetices',
-              style: TextStyle(fontSize: 18),
-            ),
+            padding: EdgeInsets.symmetric(horizontal: 40),
+            child: Text('Mac Cosmetices', style: TextStyle(fontSize: 18)),
           ),
         ],
       ),
     );
   }
 }
-
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -113,14 +104,9 @@ class ProfilePage extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset('assets/IMG03.jpg'),
-          SizedBox(height: 20,),
-          Text("Mahira's Makeover" ,
-          style: TextStyle(
-            fontSize: 22.5,
-          ),
-          ),
+          SizedBox(height: 20),
+          Text("Mahira's Makeover", style: TextStyle(fontSize: 22.5)),
         ],
-      
       ),
     );
   }

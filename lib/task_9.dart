@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Task_9 extends StatelessWidget {
-  const Task_9({super.key});
+class prob_9 extends StatelessWidget {
+  const prob_9({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: const Text('Task_9')),
-        backgroundColor: const Color.fromARGB(255, 198, 235, 176),
+        title: Center(child: const Text('Tracker Problem-9')),
+        backgroundColor: const Color.fromARGB(255, 85, 194, 227),
       ),
       body: const AnimatedCardListView(),
     );
@@ -65,7 +65,9 @@ class _AnimatedCardWidgetState extends State<AnimatedCardWidget> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+              borderRadius: const BorderRadius.vertical(
+                top: Radius.circular(15),
+              ),
               child: Image.asset(
                 widget.imageUrl,
                 width: double.infinity,
@@ -90,29 +92,24 @@ class _AnimatedCardWidgetState extends State<AnimatedCardWidget> {
                   const SizedBox(height: 5),
                   Text(
                     widget.subtitle,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
-                    ),
+                    style: TextStyle(fontSize: 16, color: Colors.grey[600]),
                   ),
                 ],
               ),
             ),
-            
+
             AnimatedCrossFade(
               duration: const Duration(milliseconds: 300),
-              crossFadeState: _isExpanded 
-                  ? CrossFadeState.showSecond 
-                  : CrossFadeState.showFirst,
+              crossFadeState:
+                  _isExpanded
+                      ? CrossFadeState.showSecond
+                      : CrossFadeState.showFirst,
               firstChild: const SizedBox.shrink(),
               secondChild: Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
                   widget.description,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: Colors.black54,
-                  ),
+                  style: const TextStyle(fontSize: 16, color: Colors.black54),
                 ),
               ),
             ),
@@ -134,19 +131,22 @@ class AnimatedCardListView extends StatelessWidget {
           imageUrl: 'assets/img1.jpg',
           title: 'Living Interior',
           subtitle: 'Living Space',
-          description: 'A well-designed living room combines comfort and style, featuring cozy seating, elegant decor, and warm lighting to create a welcoming atmosphere.',
+          description:
+              'A well-designed living room combines comfort and style, featuring cozy seating, elegant decor, and warm lighting to create a welcoming atmosphere.',
         ),
         AnimatedCardWidget(
           imageUrl: 'assets/img6.jpg',
           title: 'Plant Corner Interior',
           subtitle: 'Plant Corner',
-          description: ' A dedicated plant corner adds a refreshing touch to any space, blending greenery with stylish planters and natural light for a serene ambiance.',
+          description:
+              ' A dedicated plant corner adds a refreshing touch to any space, blending greenery with stylish planters and natural light for a serene ambiance.',
         ),
         AnimatedCardWidget(
           imageUrl: 'assets/img3.jpg',
           title: 'Dining Room Interior',
           subtitle: 'Dining Space',
-          description: 'The dining room is designed for both functionality and aesthetics, featuring a well-arranged table setting, ambient lighting, and elegant decor for a pleasant dining experience.',
+          description:
+              'The dining room is designed for both functionality and aesthetics, featuring a well-arranged table setting, ambient lighting, and elegant decor for a pleasant dining experience.',
         ),
       ],
     );

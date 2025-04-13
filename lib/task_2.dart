@@ -29,14 +29,14 @@ class _Task_2state extends State<Task_2> {
           children: <Widget>[
             Text(
               displayText,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 100),
             ElevatedButton(
               onPressed: _updateText,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
+                  horizontal: 50,
                   vertical: 12,
                 ),
                 textStyle: const TextStyle(fontSize: 18),

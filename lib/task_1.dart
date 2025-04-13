@@ -17,7 +17,7 @@ class Task_1 extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Roboto',
             fontSize: 30,
-            color: const Color.fromARGB(255, 66, 6, 6),
+            color: const Color.fromARGB(255, 123, 9, 9),
             fontWeight: FontWeight.bold,
           ),
         ),

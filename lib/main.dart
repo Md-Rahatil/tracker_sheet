@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practice/task_10.dart';
+import 'package:flutter_practice/task_19.dart';
+import 'package:flutter_practice/task_6.dart';
+import 'package:flutter_practice/task_8.dart';
+import 'package:flutter_practice/task_9.dart';
 
 
 
@@ -25,7 +29,7 @@ class MyApp extends StatelessWidget {
       // home: const prob_7(),
       // home: const prob_8(),
       // home: const prob_9(),
-      home: const prob_10(),
+      // home: const prob_10(),
       // home: const prob_11(),
       // home: const prob_12(),
       // home: const prob_13(),
@@ -34,7 +38,7 @@ class MyApp extends StatelessWidget {
       // home: const prob_16(),
       // home: const prob_17(),
       // home: const prob_18(),
-      // home: const prob_19(),
+      home: const prob_19(),
     );
   }
 }

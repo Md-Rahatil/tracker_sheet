@@ -7,8 +7,13 @@ class prob_9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: const Text('Tracker Problem-9')),
-        backgroundColor: const Color.fromARGB(255, 85, 194, 227),
+        title: Center(
+          child: const Text(
+            'Tracker Problem-9',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 16, 2, 176),
       ),
       body: const AnimatedCardListView(),
     );
@@ -129,24 +134,22 @@ class AnimatedCardListView extends StatelessWidget {
       children: const [
         AnimatedCardWidget(
           imageUrl: 'assets/img1.jpg',
-          title: 'Living Interior',
-          subtitle: 'Living Space',
+          title: 'Ra Ha Til Academy',
+          subtitle: 'Logo',
           description:
-              'A well-designed living room combines comfort and style, featuring cozy seating, elegant decor, and warm lighting to create a welcoming atmosphere.',
+              "Unlock your potential with Ra Ha Til Academy, your ultimate guide to success in HSC & SSC exams.",
         ),
         AnimatedCardWidget(
-          imageUrl: 'assets/img6.jpg',
-          title: 'Plant Corner Interior',
-          subtitle: 'Plant Corner',
-          description:
-              ' A dedicated plant corner adds a refreshing touch to any space, blending greenery with stylish planters and natural light for a serene ambiance.',
+          imageUrl: 'assets/img2.jpg',
+          title: 'Admission Open',
+          subtitle: 'Contant for Admission',
+          description: "Only join for HSC & SSC candidates Students",
         ),
         AnimatedCardWidget(
           imageUrl: 'assets/img3.jpg',
-          title: 'Dining Room Interior',
-          subtitle: 'Dining Space',
-          description:
-              'The dining room is designed for both functionality and aesthetics, featuring a well-arranged table setting, ambient lighting, and elegant decor for a pleasant dining experience.',
+          title: 'Announcment',
+          subtitle: 'HSC-25',
+          description: "Join for the better and good result",
         ),
       ],
     );

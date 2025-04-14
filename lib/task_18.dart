@@ -6,7 +6,7 @@ class prob_18 extends StatefulWidget {
   const prob_18({super.key});
 
   @override
-  _Task_18State createState() => _prob_18State();
+  _prob_18State createState() => _prob_18State();
 }
 
 class _prob_18State extends State<prob_18> {
@@ -15,7 +15,7 @@ class _prob_18State extends State<prob_18> {
 
   Future<void> _pickImage() async {
     final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
-    
+
     if (pickedFile != null) {
       setState(() {
         _image = File(pickedFile.path);
@@ -29,14 +29,11 @@ class _prob_18State extends State<prob_18> {
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
         title: const Text(
-          "Profile Page",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
+          "Profile Setion",
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Colors.teal[700],
+        backgroundColor: const Color.fromARGB(255, 3, 3, 3),
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -45,7 +42,7 @@ class _prob_18State extends State<prob_18> {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.teal[700],
+                color: const Color.fromARGB(255, 165, 2, 2),
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(30),
                   bottomRight: Radius.circular(30),
@@ -62,12 +59,17 @@ class _prob_18State extends State<prob_18> {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: const Color.fromARGB(255, 0, 0, 0),
                             width: 4,
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.black.withOpacity(0.2),
+                              color: const Color.fromARGB(
+                                255,
+                                252,
+                                105,
+                                105,
+                              ).withOpacity(0.2),
                               spreadRadius: 2,
                               blurRadius: 5,
                             ),
@@ -75,15 +77,22 @@ class _prob_18State extends State<prob_18> {
                         ),
                         child: CircleAvatar(
                           radius: 80,
-                          backgroundColor: Colors.teal[100],
-                          backgroundImage: _image != null ? FileImage(_image!) : null,
-                          child: _image == null
-                              ? Icon(
-                                  Icons.person,
-                                  size: 80,
-                                  color: Colors.teal[900],
-                                )
-                              : null,
+                          backgroundColor: const Color.fromARGB(
+                            255,
+                            255,
+                            255,
+                            255,
+                          ),
+                          backgroundImage:
+                              _image != null ? FileImage(_image!) : null,
+                          child:
+                              _image == null
+                                  ? Icon(
+                                    Icons.person,
+                                    size: 80,
+                                    color: Colors.teal[900],
+                                  )
+                                  : null,
                         ),
                       ),
                     ),
@@ -93,14 +102,14 @@ class _prob_18State extends State<prob_18> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(85),
               child: ElevatedButton(
                 onPressed: _pickImage,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple[600],
+                  backgroundColor: const Color.fromARGB(255, 7, 7, 7),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 30,
-                    vertical: 15,
+                    horizontal: 40,
+                    vertical: 30,
                   ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),

@@ -2,14 +2,14 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
-class Task_18 extends StatefulWidget {
-  const Task_18({super.key});
+class prob_18 extends StatefulWidget {
+  const prob_18({super.key});
 
   @override
-  _Task_18State createState() => _Task_18State();
+  _Task_18State createState() => _prob_18State();
 }
 
-class _Task_18State extends State<Task_18> {
+class _prob_18State extends State<prob_18> {
   File? _image;
   final ImagePicker _picker = ImagePicker();
 

@@ -4,14 +4,14 @@ import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:animated_text_kit/animated_text_kit.dart';
 
-class Task_15 extends StatefulWidget {
-  const Task_15({super.key});
+class prob_15 extends StatefulWidget {
+  const prob_15({super.key});
 
   @override
-  _Task_15State createState() => _Task_15State();
+  _prob_15State createState() => _prob_15State();
 }
 
-class _Task_15State extends State<Task_15> {
+class _prob_15State extends State<prob_15> {
   DateTime? selectedDate;
   TimeOfDay? selectedTime;
 
@@ -27,7 +27,10 @@ class _Task_15State extends State<Task_15> {
     tz.TZDateTime nowInDhaka = tz.TZDateTime.now(dhaka);
     setState(() {
       selectedDate = nowInDhaka;
-      selectedTime = TimeOfDay(hour: nowInDhaka.hour, minute: nowInDhaka.minute);
+      selectedTime = TimeOfDay(
+        hour: nowInDhaka.hour,
+        minute: nowInDhaka.minute,
+      );
     });
   }
 
@@ -62,8 +65,13 @@ class _Task_15State extends State<Task_15> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: Center(child: Text('Task_15', style: TextStyle(fontWeight: FontWeight.bold))),
-        backgroundColor: Colors.teal,
+        title: Center(
+          child: Text(
+            'Traker Problem-15',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         elevation: 0,
       ),
       body: Padding(
@@ -73,8 +81,11 @@ class _Task_15State extends State<Task_15> {
           children: [
             _buildCard(
               icon: Icons.calendar_today,
-              label: "Selected Date",
-              value: selectedDate != null ? DateFormat('yyyy-MM-dd').format(selectedDate!) : "No date selected",
+              label: "Date",
+              value:
+                  selectedDate != null
+                      ? DateFormat('yyyy-MM-dd').format(selectedDate!)
+                      : "No date selected",
               onPressed: () => _pickDate(context),
             ),
             SizedBox(height: 20),
@@ -82,11 +93,11 @@ class _Task_15State extends State<Task_15> {
               duration: Duration(seconds: 1),
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 174, 58, 130).withOpacity(0.5),
+                color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5),
                 borderRadius: BorderRadius.circular(15),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black26,
+                    color: const Color.fromARGB(243, 0, 0, 0),
                     blurRadius: 8,
                     spreadRadius: 2,
                     offset: Offset(0, 4),
@@ -95,11 +106,13 @@ class _Task_15State extends State<Task_15> {
               ),
               child: Center(
                 child: DefaultTextStyle(
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: const Color.fromARGB(255, 227, 225, 225),
+                  ),
                   child: AnimatedTextKit(
-                    animatedTexts: [
-                      FadeAnimatedText("Time and Date Picker"),
-                    ],
+                    animatedTexts: [FadeAnimatedText("Select Time & Date")],
                     repeatForever: true,
                   ),
                 ),
@@ -109,7 +122,10 @@ class _Task_15State extends State<Task_15> {
             _buildCard(
               icon: Icons.access_time,
               label: "Selected Time",
-              value: selectedTime != null ? selectedTime!.format(context) : "No time selected",
+              value:
+                  selectedTime != null
+                      ? selectedTime!.format(context)
+                      : "No time selected",
               onPressed: () => _pickTime(context),
             ),
           ],
@@ -118,7 +134,12 @@ class _Task_15State extends State<Task_15> {
     );
   }
 
-  Widget _buildCard({required IconData icon, required String label, required String value, required VoidCallback onPressed}) {
+  Widget _buildCard({
+    required IconData icon,
+    required String label,
+    required String value,
+    required VoidCallback onPressed,
+  }) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       elevation: 4,
@@ -129,20 +150,29 @@ class _Task_15State extends State<Task_15> {
           children: [
             Row(
               children: [
-                Icon(icon, color: Colors.teal, size: 30),
+                Icon(icon, color: const Color.fromARGB(255, 0, 0, 0), size: 30),
                 SizedBox(width: 15),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(label, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                    Text(
+                      label,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     SizedBox(height: 5),
-                    Text(value, style: TextStyle(fontSize: 16, color: Colors.grey[700])),
+                    Text(
+                      value,
+                      style: TextStyle(fontSize: 16, color: Colors.grey[700]),
+                    ),
                   ],
                 ),
               ],
             ),
             IconButton(
-              icon: Icon(Icons.edit, color: Colors.teal),
+              icon: Icon(Icons.edit, color: const Color.fromARGB(255, 0, 0, 0)),
               onPressed: onPressed,
             ),
           ],

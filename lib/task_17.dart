@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(Task_17());
+  runApp(prob_17());
 }
 
-class Task_17 extends StatefulWidget {
-  const Task_17({super.key});
+class prob_17 extends StatefulWidget {
+  const prob_17({super.key});
 
   @override
-  _Task_17State createState() => _Task_17State();
+  _prob_17State createState() => _prob_17State();
 }
 
-class _Task_17State extends State<Task_17> {
+class _prob_17State extends State<prob_17> {
   bool isDarkMode = false;
 
   @override
@@ -22,11 +22,14 @@ class _Task_17State extends State<Task_17> {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Task_17',
-            style: TextStyle(fontWeight: FontWeight.bold),
+            'Tracker Problem-17',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
-          backgroundColor: isDarkMode ? Colors.black : Colors.purple,
+          backgroundColor:
+              isDarkMode
+                  ? const Color.fromARGB(255, 245, 240, 240)
+                  : const Color.fromARGB(255, 0, 0, 0),
           elevation: 4,
         ),
         body: Center(
@@ -36,9 +39,12 @@ class _Task_17State extends State<Task_17> {
               Icon(
                 isDarkMode ? Icons.nightlight_round : Icons.wb_sunny,
                 size: 100,
-                color: isDarkMode ? Colors.amber : Colors.orange,
+                color:
+                    isDarkMode
+                        ? const Color.fromARGB(255, 0, 0, 0)
+                        : Colors.orange,
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 50),
               Text(
                 isDarkMode ? 'Dark Mode ' : 'Light Mode ',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
@@ -53,10 +59,13 @@ class _Task_17State extends State<Task_17> {
                 child: AnimatedContainer(
                   duration: Duration(milliseconds: 400),
                   width: 120,
-                  height: 50,
+                  height: 55,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: isDarkMode ? Colors.black : Colors.purple,
+                    borderRadius: BorderRadius.circular(20),
+                    color:
+                        isDarkMode
+                            ? Colors.black
+                            : const Color.fromARGB(255, 3, 3, 3),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black26,

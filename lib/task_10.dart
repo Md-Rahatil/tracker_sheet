@@ -22,14 +22,18 @@ class _prob_10State extends State<prob_10> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Task_10')),
-        backgroundColor: const Color.fromARGB(255, 134, 28, 107),
+        title: Center(
+          child: Text(
+            'Tracker Problem-10',
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
+        ),
+        backgroundColor: const Color.fromARGB(255, 221, 244, 53),
       ),
-      // here i have to call it from the body
+
       body: _pages[_selectedIndex],
 
       bottomNavigationBar: BottomNavigationBar(
-        //also select the current index
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
 
@@ -50,17 +54,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color.fromARGB(255, 254, 219, 219),
+      color: const Color.fromARGB(255, 255, 255, 255),
       child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Image.asset('assets/IMG01.jpg'),
-            const SizedBox(height: 20),
+            Image.asset('assets/img1.jpg'),
+            const SizedBox(height: 10),
             Text(
-              'Professional Makeup Brush Set',
+              'Unlock your potential with Ra Ha Til Academy, your ultimate guide to success in HSC & SSC exams.',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 14,
                 fontFamily: 'Roboto',
                 fontWeight: FontWeight.bold,
               ),
@@ -82,11 +86,18 @@ class SearchPage extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/IMG02.jpg'),
+          Image.asset('assets/img2.jpg'),
           SizedBox(height: 20),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 40),
-            child: Text('Mac Cosmetices', style: TextStyle(fontSize: 18)),
+            child: Text(
+              'Aademic Information',
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
           ),
         ],
       ),
@@ -103,9 +114,16 @@ class ProfilePage extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset('assets/IMG03.jpg'),
+          Image.asset('assets/img3.jpg'),
           SizedBox(height: 20),
-          Text("Mahira's Makeover", style: TextStyle(fontSize: 22.5)),
+          Text(
+            "New Batch Open Soon",
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: 22.5,
+            ),
+          ),
         ],
       ),
     );
